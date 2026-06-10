@@ -33,14 +33,15 @@ cec-brand-assets/
 ├─ backgrounds/             ← 12 brand background JPGs (1200×1200)
 ├─ characters/              ← 155 character PNGs across 7 character folders + 2 group shots
 ├─ graphic-elements/        ← 42 PNGs (4 underlines + 2 dot patterns + 17 coins + 7 3D props + 6 round wrappers + 6 stars)
-├─ logos/                   ← 62 logo files across 10 sub-brand folders
-└─ photos/                  ← 191 real-world photos across 8 themed subfolders
+├─ logos/                   ← 90 logo files across 10 CEC sub-brand folders + 1 competitor-logos folder
+├─ photos/                  ← 191 real-world photos across 8 themed subfolders
+└─ weather-icons/           ← 24 glossy weather-condition PNGs for dashboards & data displays
 ```
 
 **Naming convention:** Every file and folder uses **lowercase kebab-case** — no spaces, no
 underscores, no uppercase letters. URLs work as-is without `%20` encoding.
 
-**Total: 462 files.**
+**Total: 514 files.**
 
 ---
 
@@ -215,8 +216,10 @@ Color combos: `blue-orange`, `blue-purple`, `green-purple`, `green-purple2`, `or
 
 ## 4. `logos/` — Logo lockups (PNG / JPG)
 
-62 logo files across 10 sub-brand folders. All filenames are descriptive kebab-case so an AI
-can pick by intent (layout + tagline + color treatment).
+90 logo files: **62 CEC-brand logos** across 10 sub-brand folders, plus **28 competitor
+logos** in `competitor-logos/` (see the competitor-logos section at the end of §4). All
+filenames are descriptive kebab-case so an AI can pick by intent (layout + tagline + color
+treatment).
 
 **Master CEC brand naming convention** (sub-brand folders follow simpler patterns):
 
@@ -322,6 +325,47 @@ can pick by intent (layout + tagline + color treatment).
 ### `logos/turning-fun-into-funds/` (2 files) — fundraising-program logo
 
 - `turning-fun-into-funds-logo.jpg` and `.png` — same lockup, two formats.
+
+### `logos/competitor-logos/` (28 files) — competitor & industry logos
+
+Third-party brand logos for the family-entertainment / out-of-home-fun competitive set.
+**These are not CEC marks** — use them only on competitive-landscape, market-share,
+positioning, and "CEC vs. the field" slides (e.g. the competitor slides in
+`San Jose Traffic Analysis`, `San Jose Update`, and the Competitive/Consumer Update section
+of `DM Update`). Each logo is owned by its respective company; see Trademark & usage below.
+Where a brand ships in multiple orientations, the suffix marks the layout (`-horizontal`,
+`-vertical`, `-square`); the unsuffixed file is the primary/default lockup.
+
+| File | Competitor | Category |
+| --- | --- | --- |
+| `dave-and-busters-square.png` | Dave & Buster's | Arcade + sports-bar eatertainment (square lockup). |
+| `main-event-horizontal.png` | Main Event | Bowling + arcade FEC (horizontal lockup). |
+| `round-one.png` | Round One (Round1) | Arcade, bowling & amusement FEC. |
+| `bowlero.png` | Bowlero | Bowling-led entertainment chain. |
+| `amf-bowling.png` | AMF Bowling | Bowling centers (Bowlero-owned). |
+| `lucky-strike-horizontal.png` | Lucky Strike | Upscale bowling + entertainment (horizontal lockup). |
+| `lucky-strike-vertical.png` | Lucky Strike | Vertical lockup. |
+| `stars-and-strikes.png` | Stars and Strikes | Bowling + family-entertainment center. |
+| `topgolf-horizontal.png` | Topgolf | Golf-driving-range entertainment (horizontal lockup). |
+| `topgolf-vertical.png` | Topgolf | Vertical lockup. |
+| `andretti-indoor-karting.png` | Andretti Indoor Karting & Games | Indoor go-kart + arcade FEC (primary lockup). |
+| `andretti-indoor-karting-vertical.png` | Andretti Indoor Karting & Games | Vertical lockup. |
+| `k1-speed.png` | K1 Speed | Indoor electric go-kart racing. |
+| `sky-zone.png` | Sky Zone | Trampoline / adventure park (primary lockup). |
+| `sky-zone-horizontal.png` | Sky Zone | Horizontal lockup. |
+| `sky-zone-square.png` | Sky Zone | Square lockup. |
+| `urban-air.png` | Urban Air Adventure Park | Trampoline + adventure park (primary lockup). |
+| `urban-air-horizontal.png` | Urban Air Adventure Park | Horizontal lockup. |
+| `altitude-trampoline-park.png` | Altitude Trampoline Park | Trampoline park. |
+| `launch-trampoline-park.png` | Launch Trampoline Park | Trampoline / adventure park. |
+| `get-air-trampoline-park.png` | Get Air Trampoline Park | Trampoline park. |
+| `slick-city.png` | Slick City | Indoor slide / action park. |
+| `incredible-pizza-company.png` | Incredible Pizza Company | Buffet + games FEC. |
+| `johns-incredible-pizza.png` | John's Incredible Pizza | Buffet + games FEC. |
+| `kids-empire.png` | Kids Empire | Indoor playground for younger kids. |
+| `hyper-kidz-horizontal.png` | Hyper Kidz | Indoor playground for younger kids (horizontal lockup). |
+| `cheeky-monkeys.png` | Cheeky Monkeys | Indoor playground / kids' party venue. |
+| `little-gym.png` | The Little Gym | Kids' gym, classes & motor-skill programs. |
 
 ---
 
@@ -658,8 +702,59 @@ carry "vibe and emotion" in any deck — pull from here when the slide needs a r
 
 ---
 
+## 6. `weather-icons/` — Weather-condition icons (PNG with transparency)
+
+A 24-icon set of glossy, glass-style weather symbols for **dashboards, data displays,
+status tiles, and presentation visuals** (e.g. an event-day forecast, a store-conditions
+panel, a "weather impact on traffic" slide). Each icon is a transparent PNG with a soft
+glossy 3D treatment — blue cloud bodies, amber/orange sun, and colored precipitation glyphs —
+sitting on its own faint reflection. Not a CEC-brand-specific set; these are general-purpose
+condition icons kept here so decks and dashboards can pull a consistent weather vocabulary.
+
+**Naming convention:** `<condition>[-<modifier>].png`, descriptive kebab-case, so you can pick
+by intent without opening the file. Rain and snow ship as graded ramps (light → moderate →
+heavy) that differ only in glyph size/density — use them as ordered intensity sets.
+
+| File | Condition shown | Use for |
+| --- | --- | --- |
+| `clear-sunny.png` | Bright yellow sun, full rounded rays | Default "clear / sunny" day. |
+| `sunny-hot.png` | Vivid orange sun, sharp spiky rays | Hot / strong-sun day; warmer read than `clear-sunny`. |
+| `sun-hazy.png` | Pale, washed-out sun with spiky rays | Hazy / weak sunshine, smog or high cloud. |
+| `heat-uv-warning.png` | Orange sun ringed in bold red with red spokes | Extreme-heat or high-UV alert badge. |
+| `partly-sunny.png` | Yellow sun in front of a blue cloud | Partly sunny / sun-and-cloud mix (daytime). |
+| `partly-cloudy-night.png` | Yellow crescent moon with cloud | Partly cloudy at night / nighttime conditions. |
+| `mostly-cloudy.png` | Blue-outlined cloud filled with a puffy white cloud | Mostly cloudy. |
+| `cloudy.png` | Blue cloud stacked above a white/grey cloud | Cloudy / overcast (full cloud cover). |
+| `overcast-snow.png` | Muted/overcast cloud with grey stars | Overcast with snow. |
+| `rain-light.png` | Cloud with 8 small teardrop drops | Light rain / drizzle (ramp step 1). |
+| `rain-moderate.png` | Cloud with 6 larger drops | Moderate rain (ramp step 2). |
+| `rain-heavy.png` | Saturated cloud with heavy drops | Heavy rain (ramp step 3). |
+| `thunderstorm.png` | Cloud with three blue lightning bolts | Thunderstorm / severe stormy conditions. |
+| `lightning.png` | Cloud with a single bold orange bolt | Lightning / single-strike storm state. |
+| `storm-warning.png` | Cloud with orange bolt over an umbrella shape | Severe-weather alert / "take cover" badge. |
+| `windy.png` | Cloud with blue wavy zig-zag lines | Windy / breezy conditions. |
+| `fog-mist.png` | Cloud over horizontal lines | Fog / mist / low visibility. |
+| `hail-sleet.png` | Cloud with blue triangular pellets | Hail / sleet. |
+| `snow-light.png` | Cloud with soft grey rounded flakes | Light snow (ramp step 1). |
+| `snow.png` | Cloud with grey 5-point stars | Standard snow (ramp step 2). |
+| `snow-heavy.png` | Cloud with glowing blue stars | Heavy snow (ramp step 3). |
+| `snowflakes.png` | Cloud with grey 6-point snowflakes | Snow shown as detailed snowflakes. |
+| `snow-flurries.png` | Cloud with small scattered blue flakes | Light snow flurries. |
+| `sun-cloud-snow-mix.png` | Sun inside a blue cloud with flakes below | Sun / cloud / snow wintry mix. |
+
+**Picking a subset:** if you only need a few states, the core five are `clear-sunny`,
+`partly-cloudy-night` (or `partly-sunny`), `cloudy`, `rain-moderate`, and `snow`. For rain or
+snow intensity, use the `-light` / `(base)` / `-heavy` ramp rather than mixing glyph styles.
+
+---
+
 ## Trademark & usage
 
 Chuck E. Cheese® and the Chuck E. Cheese character marks are trademarks of CEC Entertainment.
 These assets are made available for Chuck E. Cheese marketing teams, agency partners, and
 authorized brand use. For other use, contact CEC Entertainment.
+
+The logos in `logos/competitor-logos/` are the trademarks of their respective owners and are
+**not** owned by or affiliated with CEC Entertainment. They are included solely for internal
+competitive analysis and comparative reference (nominative use); do not use them to imply any
+endorsement, partnership, or affiliation.
